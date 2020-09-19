@@ -14,7 +14,6 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.devsuperior.dspesquisa.entities.enums.Platform;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name = "tb_game")	//Nome da Tabela no banco de dados
@@ -32,7 +31,7 @@ public class Game implements Serializable {
 	@JoinColumn(name = "genre_id") //nome do campo chave-estrangeira no banco de dados
 	private Genre genre;
 	
-	@JsonIgnore //para evitar referência circular
+	//@JsonIgnore //para evitar referência circular
 	@OneToMany(mappedBy = "game")
 	private List<Record> records = new ArrayList<>();
 	
