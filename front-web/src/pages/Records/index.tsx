@@ -8,7 +8,7 @@ import Pagination from './Pagination'
 import Filters from '../../components/Filters';
 
 
-const BASE_URL = 'http://localhost:8080' //endereço do nosso site (teste)
+const BASE_URL = 'https://sds1-margersan.herokuapp.com'; //endereço do nosso site (teste)
 
 const Records = () => {
     const [ recordsResponse, setRecordsResponse ] = useState<RecordsResponse>(); //hook que cria um estado interno pro componente

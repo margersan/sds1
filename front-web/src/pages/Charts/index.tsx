@@ -20,7 +20,8 @@ const initialPieData = {
     labels: [],
     series: []
 }
-const BASE_URL = 'http://localhost:8080' //endereço do nosso site (teste)
+
+const BASE_URL = 'https://sds1-margersan.herokuapp.com' //endereço do nosso site (teste)
 
 const Charts = () => {
 
